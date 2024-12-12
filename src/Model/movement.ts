@@ -21,7 +21,7 @@ export const MovementFunc = (db: Sequelize) => {
     },
     quantity: {
       allowNull: false,
-      type: DataTypes.REAL
+      type: DataTypes.DECIMAL(30, 2)
     },
     description: {
       allowNull: true,

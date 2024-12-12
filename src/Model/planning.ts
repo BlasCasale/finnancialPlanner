@@ -13,15 +13,15 @@ export const PlanningFunc = (db: Sequelize) => {
       unique: true
     },
     earning: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DECIMAL(30, 2),
       allowNull: false
     },
     expense: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DECIMAL(30, 2),
       allowNull: false
     },
     saving: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DECIMAL(30, 2),
       allowNull: false
     }
   }, {

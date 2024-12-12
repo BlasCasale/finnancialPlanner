@@ -16,19 +16,31 @@ export const MonthResumeFunc = (db: Sequelize) => {
       allowNull: false
     },
     earnings: {
-      type: DataTypes.REAL,
+      type: DataTypes.DECIMAL(30, 2),
       allowNull: false,
       defaultValue: 0
     },
     expense: {
-      type: DataTypes.REAL,
+      type: DataTypes.DECIMAL(30, 2),
       allowNull: false,
       defaultValue: 0
     },
     saving: {
-      type: DataTypes.REAL,
+      type: DataTypes.DECIMAL(30, 2),
       allowNull: false,
       defaultValue: 0
+    },
+    expectedEarning: {
+      type: DataTypes.DECIMAL(30, 2),
+      allowNull: false
+    },
+    expectedExpense: {
+      type: DataTypes.DECIMAL(30, 2),
+      allowNull: false
+    },
+    expectedSaving: {
+      type: DataTypes.DECIMAL(30, 2),
+      allowNull: false
     }
   }, {
     timestamps: false
